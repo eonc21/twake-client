@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
 import '../App.css';
 import Input from './Input'
-import * as htmlToImage from 'html-to-image';
-import { toPng, toJpeg, toBlob, toPixelData, toSvg } from 'html-to-image';
 import Tweet from './Tweet'
 
 export const Wrapper = () => {
@@ -15,13 +13,7 @@ export const Wrapper = () => {
     }
 
     const downloadJpeg = () => {
-        htmlToImage.toJpeg(document.getElementsByClassName('tweet')[0], { quality: 0.95 })
-        .then(function (dataUrl) {
-          var link = document.createElement('a');
-          link.download = 'my-image-name.jpeg';
-          link.href = dataUrl;
-          link.click();
-        });
+        
         console.log("henlo");
 
     }
