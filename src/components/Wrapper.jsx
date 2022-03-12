@@ -53,7 +53,7 @@ export const Wrapper = () => {
                 />
             {tweet && <Tweet id="tweet" tweet={tweet}/>}
 
-            <button onClick={downloadJpeg} style={{width: 150, height: 50, position: "absolute", bottom: 100}}>Export fake tweet as jpeg</button>
+            <button onClick={downloadJpeg} style={{height: "100px"}}>Export picture of fake tweet</button>
 
         </div>
     )

@@ -1,6 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.header-container {
+  align-self: center;
+  width: 70%;
+  height: 60vh;
+  text-align: center;
+
+}
+
+.satire {
+  color: rgb(139, 139, 139);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 500;
+
+
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  padding: 10px;
+  background-color: #26364b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #070a0f;
+  margin: 0 10px;
+  border-radius: 15px;
+}
 .App {
   text-align: center;
+  padding: 0;
+  background-color: #141f2b;
+  overflow-y: hidden;
+  margin: 0;
+  max-width: 100%;
+  scroll-behavior:smooth;
+  scrollbar-width: 10px;
+  scrollbar-color: black;
 }
 
 .App-logo {
@@ -12,6 +65,20 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  background-color: #141f2b;
+  color: rgb(231, 231, 231);
+  margin: 0;
 }
 
 .user-details {
@@ -139,6 +206,8 @@ form {
   width: 500px;
   align-self: center;
   margin: auto;
+  color: rgba(187, 187, 187, 0.822);
+
 }
 
 @keyframes App-logo-spin {
